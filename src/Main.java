@@ -1,7 +1,7 @@
 
 public class Main {
 
-	
+	static String quote; 
 	
 
 	
@@ -26,7 +26,12 @@ public class Main {
 				System.out.println("Hello World!");
 			}
 	    	
-	    	System.out.println("This is the int variable -> " + aNumber + "\nThis is the String variable -> " + java_String);
+	    	System.out.println("\n\nThis is the int variable -> " + aNumber + "\nThis is the String variable -> " + java_String);
+	    	quote = "\n\"A clever person solves a problem. A wise person avoids it.\" -Albert Einstein";
+	    	System.out.println(quote);
+	    	
+	    	java_String = "\nRemember I said java is hard?\nWell.. it's really hard!";
+	    	System.out.println(java_String);
 	    	
 	    	
 	    }
