@@ -9,6 +9,7 @@ public class Main {
 	    	
 	    	String java_String = "JAVA is hard Q_Q";
 	    	int aNumber = 100000;
+	    	final int finalNumber = 12345;
 	    	
 	    	
 	    	
@@ -32,6 +33,8 @@ public class Main {
 	    	
 	    	java_String = "\nRemember I said java is hard?\nWell.. it's really hard!";
 	    	System.out.println(java_String);
+	    	java_String = java_String + ("" + aNumber);
+	    	System.out.println("\n\nThis time I'm printing the final variable (in this case it's a number) and assigning a variable to another one in the same time:\nFirst the final number: " + finalNumber + "\nand this is the String variable I had which I added a number to it: " + java_String + ".");
 	    	
 	    	
 	    }
