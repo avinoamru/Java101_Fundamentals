@@ -1,5 +1,6 @@
+package assignments;
 
-public class Main {
+public class Class_1a {
 
 	static String quote; 
 	
