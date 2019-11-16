@@ -2,22 +2,15 @@ package primeListGenerator;
 
 public class Main {
 
-	public Main(int aNumber) {
-		
-		for (int i = 0; i < aNumber; i++) {
-			
-			if (i % 2 == 0) {
-				
-			}
-		}
-		
-	}
+	static PrimeNumber prime = new PrimeNumber();
 	
 	
 	
 	
 	
 	public static void main(String[] args) {
+		prime.create_array(30);
+		
 		
 	}
 	
