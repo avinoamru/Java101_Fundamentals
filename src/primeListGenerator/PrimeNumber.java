@@ -6,15 +6,18 @@ import java.util.ArrayList;
 public class PrimeNumber {
 
 	
+	
 	ArrayList<Integer> List = new ArrayList<Integer>();
 	
-	ArrayList<Integer> primeList = new ArrayList<Integer>();
+	ArrayList<Prime> primeList = new ArrayList<Prime>();
 	
 	boolean isPrime = false;
 	
-	ArrayList<Integer> create_array(int size) {
-	
+	ArrayList<Integer> create_array(Integer size) {
+		
+		
 		for (int i = 0; i < size; i++) {
+			
 			List.add(i);
 		}System.out.println(List);
 		return List;
@@ -22,25 +25,30 @@ public class PrimeNumber {
 	
 	void check_prime() {
 		
-		for (int i = 0; i < List.size(); i++) {
-			for (int j = 2; j < List.indexOf(i); j++) {
+		boolean flag = false;
+		
+		for (int i = 2; i < List.size(); i++) {
 			
-			if (List.indexOf(i) % j == 0) {
-				isPrime =false;
-				
-			}else {
-				isPrime = true;
-		}
+			if (List.size() % i == 0) {
+				flag=true;
 			
-			if (isPrime == true) {
-				primeList.add(j);
 			}
-			
 		}
-			
+		
+		if (flag == false) {
+			List.add(num);
+		}
+		
+		else {
+			System.out.println(num + " is not a prime number");
 		}System.out.println(primeList);
+
 		
 	}
+			
+		
+		
+	
 	
 	
 }

@@ -12,6 +12,7 @@ public class Main {
 		prime.create_array(30);
 		
 		
+		
 	}
 	
 }
